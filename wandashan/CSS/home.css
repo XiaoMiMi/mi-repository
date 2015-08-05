@@ -1,0 +1,489 @@
+body {
+    border-top: 4px solid #023591;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*头部开始*/
+header{
+    width: 1200px;
+    height: 466px;
+}
+/*背景开始*/
+header .login-box{
+    margin: 10px;
+    float: right;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+}
+header .header-bg{
+    width: 1200px;
+    height: 340px;
+    position: absolute;
+    z-index: -1;
+}
+/*背景结束*/
+/*logo开始*/
+header .header-logo{
+    width: 210px;
+    height: 100px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+header .header-logo a{
+    display: inline-block;
+    width: 210px;
+    height: 100px;
+}
+/*logo结束*/
+/*菜单开始*/
+header .header-bar{
+    width: 700px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 70px;
+    float: left;
+    background-color: #023591;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000000;
+}
+header .header-bar ul{
+    margin-left: 10px;
+    float: left;
+}
+header .header-bar li{
+    margin-left: 30px;
+    float: left;
+    display: inline-block;
+}
+header .header-bar a{
+    margin-right: 20px;
+    float: left;
+    color: #ffffff;
+}
+header .header-bar i{
+    border-left:2px solid #052358;
+    border-right: 2px solid #4e66da;
+}
+/*菜单结束*/
+/*产品系列开始*/
+header .header-set{
+    padding: 340px 0 0 50px;
+}
+/*产品系列结束*/
+/*头部结束*/
+/*main开始*/
+/*pic开始*/
+main .pic{
+    background-color: #e7f0ff;
+    height: 680px;
+    width: 1060px;
+}
+.maskwraper:hover .mask{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.30;
+    color: #ffffff;
+    font: bold 48px SimHei,sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.maskwraper .mask{
+    display: none;
+}
+main .pic-1{
+    float: left;
+}
+main .pic-1 .pic-1-1{
+    position: relative;
+    width: 460px;
+    height: 320px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .pic-1 .pic-1-1 img{
+    width: 460px;
+    height: 320px;
+}
+.pic-1-1:hover .mask{
+    width: 460px;
+    height: 320px;
+    line-height: 320px;
+}
+main .pic-1 .pic-1-2{
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+main .pic-1 .pic-1-2 img{
+    width: 200px;
+    height: 300px;
+}
+.pic-1-2:hover .mask{
+    width: 200px;
+    height: 300px;
+    line-height: 300px;
+}
+main .pic-1 .pic-1-3{
+    position: relative;
+    width: 240px;
+    height: 300px;
+    margin-left: 220px;
+    margin-top: -300px;
+}
+main .pic-1 .pic-1-3 img{
+    width: 240px;
+    height: 300px;
+}
+.pic-1-3:hover .mask{
+    width: 240px;
+    height: 300px;
+    line-height: 300px;
+}
+main .pic-2{
+    float: left;
+}
+main .pic-2 .pic-2-1{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+main .pic-2 .pic-2-1 img{
+    width: 300px;
+    height: 250px;
+}
+.pic-2-1:hover .mask{
+    width: 300px;
+    height: 250px;
+    line-height: 250px;
+}
+main .pic-2 .pic-2-2{
+    position: relative;
+    width: 300px;
+    height: 370px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+main .pic-2 .pic-2-2 img{
+    width: 300px;
+    height: 370px;
+}
+.pic-2-2:hover .mask{
+    width: 300px;
+    height: 370px;
+    line-height: 370px;
+}
+main .pic-3{
+    float: left;
+    margin-left: 780px;
+    margin-top: -660px;
+}
+main .pic-3 .pic-3-1{
+    position: relative;
+    width: 260px;
+    height: 250px;
+    margin: 20px 20px 0 20px;
+}
+main .pic-3 .pic-3-1 img{
+    width: 260px;
+    height: 250px;
+}
+.pic-3-1:hover .mask{
+    width: 260px;
+    height: 250px;
+    line-height: 250px;
+}
+main .pic-3 .pic-3-2{
+    position: relative;
+    width: 260px;
+    height: 175px;
+    margin: 20px 20px 0 20px;
+}
+main .pic-3 .pic-3-2 img{
+    width: 260px;
+    height: 175px;
+}
+.pic-3-2:hover .mask{
+    width: 260px;
+    height: 175px;
+    line-height: 175px;
+}
+main .pic-3 .pic-3-3{
+    position: relative;
+    width: 280px;
+    height: 175px;
+    margin: 20px 20px 0 20px;
+}
+main .pic-3 .pic-3-3 img{
+    width: 260px;
+    height: 175px;
+}
+.pic-3-3:hover .mask{
+    width: 260px;
+    height: 175px;
+    line-height: 175px;
+}
+/*pic结束*/
+/*sale开始*/
+main .sale{
+    width: 68px;
+    height: 494px;
+    float: left;
+    margin-top: -750px;
+    margin-left: 1125px;
+    background: url("../images/shop-logo.png");
+}
+main .sale .weixin {
+    width: 68px;
+    height: 68px;
+}
+main .sale .jingdong {
+    width: 68px;
+    height: 68px;
+    margin-top: 18px;
+}
+main .sale .tianmao {
+    width: 68px;
+    height: 68px;
+    margin-top: 18px;
+}
+main .sale .gome {
+    width: 68px;
+    height: 68px;
+    margin-top: 18px;
+}
+main .sale .yihaodian {
+    width: 68px;
+    height: 68px;
+    margin-top: 18px;
+}
+main .sale .dangdang {
+    width: 68px;
+    height: 68px;
+    margin-top: 18px;
+}
+/*sale结束*/
+/*奶源品质开始*/
+main .naiyuan{
+    float: left;
+    width: 780px;
+    height: 300px;
+    background-color: #e7f0ff;
+}
+main .naiyuan .pinzhi{
+    float: left;
+}
+main .naiyuan .wenben{
+    float: left;
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+main .naiyuan .wenben .text {
+    float: left;
+    width: 200px;
+    height: 30px;
+}
+main .naiyuan .anniu .submit{
+    float: left;
+    margin-left: 8px;
+    margin-top: 10px;
+    padding: 6px; ;
+    background-color: #e30000;
+    color: #ffffff;
+}
+main .naiyuan p{
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+main .naiyuan .naiyuan4{
+    float: left;
+    width: 780px;
+    height: 160px;
+}
+main .naiyuan .naiyuan4 img{
+    width: 780px;
+    height: 160px;
+}
+/*奶源品质结束*/
+/*新闻内容开始*/
+.content{
+    width: 260px;
+    height: 300px;
+    float: left;
+    margin-left: 17px;
+    border: 2px solid #d0c9c9;
+}
+.content li{
+    border-bottom:1px dashed #d0c9c9;
+    display: block;
+    margin: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content .gengduo{
+    float: right;
+}
+.center{
+    width: 60px;
+    height: 180px;
+    float: left;
+    margin-top: 50px;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 10px #000000;
+    background-color: #023591;
+}
+.center p{
+    padding: 20px;
+    font: normal bold 30px smihei;
+    color: #ffffff;
+}
+/*新闻内容结束*/
+/*main结束*/
+/*footer开始*/
+footer{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    float: left;
+    border-top: outset;
+}
+.footer-qun{
+    float: left;
+}
+.footer-qun h3,li{
+    display: block;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.footer-w{
+    float: left;
+    margin-left: 10px;
+}
+.footer-w li{
+    display: block;
+    margin-top: 10px;
+}
+.footer-tel{
+    float: left;
+    margin-left: 10px;
+}
+.footer-tel li{
+    display: block;
+    margin-top: 10px;
+}
+.footer-logo{
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/*footer结束*/
+/*全屏遮罩层开始*/
+#mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+}
+/*全屏遮罩层结束*/
+/*登录开始*/
+#login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,50%);
+    width: 390px;
+    height: 446px;
+    background-color: #ffffff;
+}
+#login header{
+    height: 46px;
+    width: 390px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f2f2f2;
+    cursor:move;
+}
+#login header i{
+    color: #cccccd;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+#login header i:hover{
+    color: #2f2f2f;
+}
+#login header h1{
+    text-align: center;
+    font-size: 20px;
+}
+#login form{
+    position: relative;
+}
+#login form .input_1, .input_2{
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 350px;
+    height: 16px;
+    padding: 12px 10px 12px 10px;
+    border: 1px solid #ddd;
+}
+#login form .input_3{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#login form .a01{
+    margin-left: 200px;
+}
+#login form .input_4{
+    width: 350px;
+    height: 40px;
+    margin:10px 0 10px 15px;
+    background-color: #023591;
+    font: 20px 微软雅黑,黑体, Verdana,sans-serif;
+    color: #ffffff;
+}
+#login form .a02{
+    margin-left: 310px;
+}
+#login .login-other{
+    border-top: solid 2px #f2f2f2;
+    padding-left: 10px;
+    margin-top: 100px;
+}
+#login .login-other div{
+    padding-top: 12px;
+    margin-top: 10px;
+}
+#login .login-other .wb{
+    margin-left: 10px;
+}
+#login .login-other .er{
+    margin-top: -48px;
+    float: right;
+}
+/*登录结束*/

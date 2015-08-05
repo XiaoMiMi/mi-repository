@@ -1,0 +1,18 @@
+article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+}
+body{
+    background-color: white;
+    font: 14px 微软雅黑,黑体, Verdana,sans-serif;
+    color: #333333;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}

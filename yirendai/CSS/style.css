@@ -1,0 +1,233 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, label, select, option, textarea, button, fieldset, legend {
+    font: 12px/1.5em tahoma,arial,宋体,SimSun,STSong,serif;
+}
+body {
+    color: #666666;
+}
+ul, ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #0098e0;
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+}
+/*.header_top开始*/
+.header {
+    height: 118px;
+    background: #fff;
+}
+.header_top {
+    background: #f7f7f7;
+    color: #909090;
+    height: 28px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+.header_contact {
+    float: left;
+}
+.header_contact li {
+    float: left;
+    padding-left: 20px;
+    margin-right: 15px;
+    height: 28px;
+    line-height: 28px;
+}
+.header_contact li.header_ico_yixin{
+    background: transparent url("../images/hd_ft.gif") -161px -149px no-repeat;
+}
+.header_contact li.header_ico_app {
+    background: url("../images/download_mobile.gif") left top no-repeat;
+}
+.header_contact li.header_ico_tel {
+    background: transparent url("../images/hd_ft.gif") -372px -151px no-repeat;
+    display: inline-block;
+    width: 130px;
+}
+.header_contact a {
+    display: inline-block;
+    color: #909090;
+}
+.header_login {
+    float: right;
+    height: 28px;
+    line-height: 28px;
+}
+.header_login li {
+    float: left;
+}
+.header_login li a {
+    color: #909090;
+}
+.header_login li.gray {
+    color: #c8c8c8;
+    padding: 0 6px;
+}
+.header_login li a.orange, .header_login li .orange {
+    color: #ff7200;
+}
+.guide {
+    position: relative;
+    height: 36px;
+    z-index: 999;
+    _height: 30px;
+    display: block;
+}
+.guideIcon {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    width: 9px;
+    height: 5px;
+    overflow: hidden;
+    top: 30px;
+    left: 50%;
+    margin-left: -4px;
+    background-image: url("../images/guide.gif");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.guideLink {
+    text-align: center;
+    display: block;
+    width: 70px;
+    cursor: pointer;
+}
+.guideMenu {
+    position: absolute;
+    top: 34px;
+    z-index: 8;
+    display: none;
+    border-bottom: 1px solid #dbdbdb;
+}
+.header_login .guideMenu li {
+    float: none;
+    margin-bottom: -1px;
+    _margin-bottom: 0;
+}
+.guideMenu li a, .guideMenu li a:visited {
+    display: block;
+    padding: 0 6px;
+    background-color: #f7f9fc;
+    color: #909090;
+    border: 1px solid #dbdbdb;
+    _border-bottom: 0;
+    width: 62px;
+}
+/*.header_top结束*/
+/*.header_main开始*/
+.logo {
+    display: block;
+    float: left;
+    width: 232px;
+    height: 50px;
+    background: transparent url("../images/hd_ft.gif") no-repeat -556px -90px;
+    margin-top: 21px;
+}
+.header_nav {
+    float: right;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    margin-right: 21px;
+}
+.header_nav li {
+    float: left;
+    margin-left: 42px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 35px;
+}
+.header_nav a.live, .header_nav a:hover {
+    color: #0098e0;
+    text-decoration: none;
+}
+.header_nav a {
+    color: #666666;
+}
+.navMobile {
+    position: relative;
+    z-index: 10;
+    height: 53px;
+    width: 90px;
+}
+.navMobileBox {
+    display: none;
+    width: 590px;
+    height: 167px;
+    position: absolute;
+    background-color: #fff;
+    top: 53px;
+    right: -120px;
+    border: 1px solid #e9e9e9;
+    padding-left: 40px;
+}
+.navMobilePoint {
+    display: block;
+    background: url("../images/mobilePoint.gif") no-repeat;
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    right: 126px;
+}
+.navMobileBoxApp1 {
+    background: url("../images/mobileCode1.jpg") no-repeat 132px 50%;
+    border-right: 1px solid #e9e9e9;
+    height: 120px;
+    float: left;
+    width: 280px;
+    margin-right: 40px;
+    margin-top: 22px;
+}
+.navMobileBoxApp1 a, .navMobileBoxApp1 a:visited {
+    background: url("../images/mobileWeb1.png") no-repeat center 50%;
+}
+.navMobileBoxApp1 a, .navMobileBoxApp1 a:visited, .navMobileBoxApp2 a, .navMobileBoxApp2 a:visited {
+    display: block;
+    width: 114px;
+    height: 108px;
+}
+.navMobileBoxApp2 {
+    background: url("../images/mobileCode2.jpg") no-repeat right 50%;
+    height: 120px;
+    float: left;
+    width: 225px;
+    margin-top: 22px;
+}
+.navMobileBoxApp2 a, .navMobileBoxApp2 a:visited {
+    background: url("../images/mobileWeb2.png") no-repeat center 50%;
+}
+.navMobileBoxApp1 a, .navMobileBoxApp1 a:visited, .navMobileBoxApp2 a, .navMobileBoxApp2 a:visited {
+    display: block;
+    width: 114px;
+    height: 108px;
+}
+/*.header_main结束*/
+/*footer开始*/
+.footer {
+    border-top: 1px solid #e9e9e9;
+    text-align: center;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.footer_cont {
+    color: #aaaaaa;
+}
+.innerbox, .header_main {
+    width: 1000px;
+    margin: 0px auto;
+}
+.footer_banner {
+    margin-top: 10px;
+}
+
+
+/*footer结束*/

@@ -1,0 +1,138 @@
+.header{
+    background: url("../images/header-bg.png") repeat;
+}
+.header img{
+    margin-left: 30px;
+}
+.header h6{
+    color: #ffffff;
+    margin-left: 1200px;
+
+}
+.sidebar{
+    border-right: solid 1px #c3c3c3;
+}
+.nav-sidebar{
+    position: relative;
+}
+.mi-lb-zhuji{
+    border: 3px solid #0088cc;
+}
+.nav-sidebar .mi-lb{
+    padding-left: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: url("../images/nav-bg.png") repeat;
+}
+.nav-sidebar .mi-lbc{
+    padding-left: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #353535;
+}
+.nav-sidebar span{
+    position: absolute;
+    right: 10px;
+}
+.nav-sidebar .mi-lbc a{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+.nav-sidebar .mi-lbc a:hover{
+    background-color: #0088cc;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+.nav-sidebar .mi-lb a{
+    padding: 0;
+    margin: 0;
+}
+.nav-sidebar .mi-lb a:hover{
+    background-color: #4895E0;
+    padding: 0;
+    margin: 0;
+}
+.sidebar .mi-left{
+    width: 15px;
+    height: 40px;
+    margin-left: 195px;
+    border-radius: 0 5px 5px 0;
+    border: solid 2px #c3c3c3;
+}
+.mi-help{
+    border-bottom: solid 2px #c3c3c3;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+.mi-question{
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 30px;
+    width: 180px;
+    border-radius: 6px;
+    border: solid 2px #c3c3c3;
+}
+.mi-question input{
+    border: 0;
+}
+.mi-question img{
+    margin-left: 138px;
+    margin-top: -37px;
+}
+.mi-bor{
+    border-bottom: solid 4px #3B89DC;
+}
+.mi-hui9{
+    color: #999999;
+    font: 30px 微软雅黑 sans-serif;
+}
+.mi-bt{
+    margin-top: 40px;
+}
+.mi-bt button{
+    background-color: #88C52C;
+    border: solid 1px #7FAE08;
+}
+.mi-pad{
+    padding: 0;
+    margin-top: 10px;
+    height: 200px;
+}
+.mi-mag{
+    margin-left: 100px;
+    margin-top: -100px;
+}
+.mi-mag span{
+    color: #FF8601;
+    font: bold 25px 微软雅黑 sans-serif;
+}
+.mi-mag a{
+    color: #0AA2F2;
+}
+.mi-mag-bg{
+    padding: 2px 10px;
+    border: solid 1px #FF8601;
+    background: url("../images/bt-bg.png") repeat;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.mi-panel-body{
+    padding: 2px;
+}
+.mi-panel-body .mi-d{
+    float: left;
+    margin-left: 50px;
+}
+.mi-panel-body .mi-d div{
+    margin-top: 15px;
+}
+.mi-panel-body .mi-d .mi-pa{
+    margin-left: 50px;
+    margin-top: -40px;
+}
+.mi-panel-body a{
+    color: #0AA2F2;
+}

@@ -1,0 +1,193 @@
+<!--创建云主机1-->
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog mi-modal-boss" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">创建云主机</h4>
+            </div>
+            <div class="modal-body">
+
+                <div id="example-step">
+                    <h3>选择配置</h3>
+                    <section>
+                        <div class="row">
+                            <div class="col-md-9 mi-form">
+                                <form action="" id="myform" name="myform">
+                                    <div class="mi-bodydiv">
+                                        <label for="name">主机名称：&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="name"/>
+                                        <div class="mi-recommend"><label>推荐设置：</label></div>
+                                        <div class=" mi-molds" data-toggle="buttons">
+                                            <label class="btn btn-default active">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                                经济型
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                                企业型
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="options" id="option3" autocomplete="off">
+                                                高配型
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="options" id="option4" autocomplete="off">
+                                                自定义
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <div class="mi-cpu">
+                                                <div ><label>CPU：</label></div>
+                                                <input id="mi_range1" min="0" max="32" class="mi-range1" type="range"/>
+                                                <input id="mi_disk1" class="mi-t" type="text"/><span class="mi-span1">核</span>
+                                            </div>
+                                            <div class="mi-cpu">
+                                                <div><label>内存：</label></div>
+                                                <input id="mi_range2" min="0" max="128" class="mi-range2" type="range"/>
+                                                <input id="mi_disk2" class="mi-t" type="text"/><span class="mi-span2">GB</span>
+                                            </div>
+
+                                            <div class="mi-cpu">
+                                                <div><label>数据盘：</label></div>
+                                                <input id="mi_range3" min="0" max="250" class="mi-range3" type="range"/>
+                                                <input id="mi_disk3" class="mi-t" type="text"/><span class="mi-span3">GB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="mi-operation">操作系统：</label>
+                                        <div class="mi-ops" data-toggle="buttons">
+                                            <label class="btn btn-default active">
+                                                <input type="radio" name="options" id="option5" autocomplete="off" checked>
+                                                Windows
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="options" id="option6" autocomplete="off">
+                                                Linux
+                                            </label>
+                                        </div>
+                                        <div class="mi-w08">
+                                            <input type="radio" id="mi-w08"><label for="mi-w08">windows2008</label>
+                                        </div>
+                                        <div class="mi-num">
+                                            <div class="num">
+                                                <label for="num">购买数量：</label>
+                                                <input type="text" list="b-num" id="num" value="1"/>
+                                                <datalist id="b-num">
+                                                    <option value="1">
+                                                    <option value="2">
+                                                    <option value="3">
+                                                </datalist>
+                                            </div>
+                                            <div class="mi-times">
+                                                <label for="time">购买时长：</label>
+                                                <input type="text" list="b-time" id="time" value="按月"/>
+                                                <datalist id="b-time">
+                                                    <option value="按月">
+                                                    <option value="按年">
+                                                </datalist>
+                                                <input type="text" list="b-time2" value="1"/>
+                                                <datalist id="b-time2">
+                                                    <option value="1">
+                                                    <option value="2">
+                                                </datalist>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="mi-current">
+                                    <div class="mi-now-head">当前配置</div>
+                                    <table>
+                                        <tr>
+                                            <th class="text-right">数据中心：</th>
+                                            <td>华东双线</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">CPU：</th>
+                                            <td>4核</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">内存：</th>
+                                            <td>2GB</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">硬盘：</th>
+                                            <td>250GB</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">网络：</th>
+                                            <td>无网络</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">宽带：</th>
+                                            <td>0Mbps</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">数量：</th>
+                                            <td>1台</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">时长：</th>
+                                            <td>1月</td>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <td class="mi-strong">9999元</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <h3>选择网络</h3>
+                    <section>
+                        <p>2.Wonderful transition effects.</p>
+                    </section>
+                    <h3>基本设置</h3>
+                    <section>
+                        <p>3.The next and previous buttons help you to navigate through your content.</p>
+                    </section>
+                    <h3>支付</h3>
+                    <section>
+                        <p>3.The next and previous buttons help you to navigate through your content.</p>
+                    </section>
+                </div>
+
+                <!--<div class="mi-img1">
+                    <img src="../images/host-step1.jpg" alt="创建第一步"/>
+                </div>-->
+            </div>
+            <!--<div class="modal-footer mi-footer">
+                <button type="button" form="myform" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" form="myform" class="btn btn-primary">下一步</button>
+            </div>-->
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+
+    $(function(){
+
+        $('#mi_disk1').val($('#mi_range1').val());
+        $('#mi_disk2').val($('#mi_range2').val());
+        $('#mi_disk3').val($('#mi_range3').val());
+
+
+        $('#myform').bind('input',function(){
+            $('#mi_disk1').val($('#mi_range1').val());
+            $('#mi_disk2').val($('#mi_range2').val());
+            $('#mi_disk3').val($('#mi_range3').val());
+        });
+
+        $('#example-step').steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            autoFocus: false
+        });
+
+    });
+</script>
+

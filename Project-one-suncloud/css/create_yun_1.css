@@ -1,0 +1,179 @@
+.mi-modal-boss{
+    border:4px solid #c3c3c3;
+    border-radius: 10px;
+    width: 800px;
+}
+/*下一步开始*/
+
+#example-step.wizard>.steps>ul>li {
+    width: auto;
+}
+
+#example-step.wizard>.steps{
+    background-color: #eee;
+    height: 100px;
+}
+
+#example-step.wizard>.steps a .number{
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background-color: #666;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+}
+
+#example-step.wizard>.steps ul li{
+    position: relative;
+}
+
+#example-step.wizard>.steps .current a,
+#example-step.wizard>.steps .current a:hover,
+#example-step.wizard>.steps .current a:active {
+    background: none;
+    color: green;
+    cursor: default;
+}
+
+#example-step.wizard>.steps .current a .number,
+#example-step.wizard>.steps .current a:hover .number,
+#example-step.wizard>.steps .current a:active .number {
+    background-color: green;
+}
+
+#example-step.wizard>.steps .done a,
+#example-step.wizard>.steps .done a:hover,
+#example-step.wizard>.steps .done a:active {
+    background: none;
+    color: #666;
+}
+
+.mi-img1{
+    margin-left: 90px;
+}
+/*下一步结束*/
+
+
+.mi-form{
+    text-align: center;
+}
+.mi-bodydiv{
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 1px solid #c3c3c3;
+}
+.mi-recommend{
+    margin-top: 20px;
+    margin-right: 175px;
+}
+.mi-molds{
+    width: 300px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: -35px;
+}
+.mi-cpu{
+    margin-right: 140px;
+    margin-top: -5px;
+    padding: 5px 0;
+}
+.mi-cpu .mi-t{
+    position: absolute;
+    float: left;
+    width: 60px;
+    height: 20px;
+    background-color: #C0C0C0;
+    margin-left: 200px;
+    margin-top: -20px;
+
+}
+.mi-cpu .mi-range1{
+    position: absolute;
+    width: 150px;
+    margin-left: 240px;
+    top:85px;
+    padding: 3px 0;
+}
+.mi-cpu .mi-range2{
+    position: absolute;
+    width: 150px;
+    margin-left: 240px;
+    top:120px;
+    padding: 3px 0;
+}
+.mi-cpu .mi-range3{
+    position: absolute;
+    width: 150px;
+    margin-left: 240px;
+    top:155px
+}
+.mi-cpu .mi-span1{
+    position: absolute;
+    right: 70px;
+    top: 90px;
+}
+.mi-cpu .mi-span2{
+    position: absolute;
+    right: 68px;
+    top: 121px;
+}
+.mi-cpu .mi-span3{
+    position: absolute;
+    right: 68px;
+    top: 151px;
+}
+.mi-operation{
+    position: absolute;
+    left: 180px;
+}
+.mi-ops{
+    margin-left: 70px;
+}
+.mi-w08{
+    border:1px solid #c3c3c3;
+    width: 350px;
+    height: 30px;
+    margin-left: 240px;
+    margin-top: 20px;
+
+}
+.mi-w08 input, .mi-w08 label {
+    float: left;
+}
+.mi-current{
+    background-color: #CFEAF8;
+    margin-top: 20px;
+}
+.mi-current th{
+    padding: 5px 5px;
+}
+.mi-current td{
+    color: #0066CC;
+}
+.mi-current .mi-strong{
+    color: #0066CC;
+    font-size: 20px;
+}
+.mi-now-head{
+    font: bold 20px 微软雅黑 sans-serif;
+    padding: 10px;
+    border-bottom: 1px solid #c3c3c3;
+}
+.mi-num{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.mi-times{
+    padding-left: 100px;
+    margin-left: 5px;
+}
+.mi-footer{
+    text-align: center;
+}

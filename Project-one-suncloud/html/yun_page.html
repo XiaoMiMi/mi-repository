@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../lib/other/jquery.steps.css"/>
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link rel="stylesheet" href="../css/yun_page.css"/>
+    <link rel="stylesheet" href="../css/create_yun_1.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class=""><img src="../images/logo.png" alt="阳光云"/></div>
+        <h6>staralliance@vip.qq.com</h6>
+    </div>
+    <div class="row">
+        <div class="col-md-2 mi-nav-left">
+            <ul class="nav nav-sidebar">
+                <li class="mi-lbc"><a href="home.html">控制台首页</a></li>
+                <li class="mi-lb mi-lb-zhuji"><a href="">云主机</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+                <li class="mi-lb"><a href="">云硬盘</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lb"><a href="">负载均衡</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lb"><a href="">关系数据库</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lb"><a href="">云内存</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lb"><a href="">CDN</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lb"><a href="">监控宝</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lb"><a href="">DNS</a><span class="glyphicon glyphicon-chevron-up"></span></li>
+                <li class="mi-lbc"><a href="">个人中心</a></li>
+            </ul>
+            <div class="mi-help"><img src="../images/question.png" alt="帮助中心"/>帮助中心</div>
+            <div class="mi-question"><input type="text" placeholder="输入您的问题"/><img src="../images/search.png" alt=""/></div>
+            <div class="mi-serve"><img src="../images/sell.png"/><span>售后服务</span><p>周一到周五</p></div>
+            <div class="mi-tel">
+                <img src="../images/tel.png" alt="电话"/>
+                <span style="padding-right:50px ">1234567890</span>
+                <img src="../images/email.png" alt="邮箱"/>
+                <span>123@qq.com</span>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="mi-introduce">
+                <h3>云主机</h3>
+                <p>我们提供一种随时获取的，弹性计算机能力</p>
+            </div>
+            <div class="mi-btn row">
+                <div class="col-md-9">
+                    <button type="button" class="btn btn-warning btn-sm" id="my-modal"><span class="mi-jia">+</span>创建新主机</button>
+                    <div class="btn-group mi-btn-group" role="group">
+                        <button type="button" class="btn btn-default glyphicon glyphicon-play btn-sm" id="mi_open">开机</button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-stop btn-sm">关机</button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-off btn-sm">断电</button>
+                        <button type="button" class="btn btn-default glyphicon glyphicon-repeat btn-sm">重启</button>
+                    </div>
+                    <button type="button" class="mi-vnc">应急登录(VNC)</button>
+                    <button type="button" class="btn mi-btn-black btn-sm">
+                        <span class="glyphicon glyphicon-repeat"></span>
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <span class="input-group-addon glyphicon glyphicon-search" id="basic-addon2"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table class="mi-table" id="list">
+                    <tr>
+                        <td class="mi-th"><input type="checkbox" id="checkAll"/></td>
+                        <th>云服务器名称</th>
+                        <th>内网IP</th>
+                        <th>外网IP</th>
+                        <th>状态</th>
+                        <th>到期时间</th>
+                        <th>云防护</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="item_1" name="item_1"/></td>
+                        <td>阳光云方案游戏云</td>
+                        <td>180.153.222.254</td>
+                        <td>180.153.222.254</td>
+                        <td>开机中...<img src="../images/opening.png"/></td>
+                        <td>2013-12-06至2014-12-06</td>
+                        <td><img src="../images/on.png"/>已开启</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="item_2" name="item_2"/></td>
+                        <td>阳光云方案游戏云</td>
+                        <td>180.153.222.254</td>
+                        <td>180.153.222.254</td>
+                        <td><img src="../images/shutdown.png"/>已关机</td>
+                        <td>2013-12-06至2014-12-06</td>
+                        <td><img src="../images/off.png"/>已关闭</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="item_3" name="item_3"/></td>
+                        <td>阳光云方案游戏云</td>
+                        <td>180.153.222.254</td>
+                        <td>180.153.222.254</td>
+                        <td><img src="../images/operation.png"/>正常运行</td>
+                        <td>2013-12-06至2014-12-06</td>
+                        <td><img src="../images/on.png"/>已开启</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="item_4" name="item_4"/></td>
+                        <td>阳光云方案游戏云</td>
+                        <td></td>
+                        <td>180.153.222.254</td>
+                        <td><img src="../images/stop.png"/>已停止</td>
+                        <td>2013-12-06至2014-12-06</td>
+                        <td><img src="../images/off.png"/>已关闭</td>
+                    </tr>
+                </table>
+                <div class="col-md-12 mi-width">
+                    <div class="row mi-end">
+                        <div class="col-md-3"><p>条目总数：22</p>选中条目<span id="selectedLength"></span></div>
+                        <div class="col-md-3">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">10<span class="caret"></span></button>
+                        </div>
+                        <div class="col-md-3 mi-span">
+                            <span class="glyphicon glyphicon-step-backward mi-span1"></span><span class="glyphicon glyphicon-chevron-left mi-span2"></span><input type="text"/><span class="glyphicon glyphicon-chevron-right mi-span3"></span><span class="glyphicon glyphicon-step-forward mi-span4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--模态框加载的地方-->
+    <div id="mi-modal"></div>
+
+
+
+<script src="../lib/jquery/jquery-1.11.3.min.js"></script>
+<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../lib/other/jquery.steps.js"></script>
+
+    <script>
+        $(function() {
+
+            //获取节点
+            var $selectedLength = $('#selectedLength');
+            var $mi_open = $('#mi_open');
+            var $checkAll = $('#checkAll');
+            var $items = $('table#list input:checkbox:not(#checkAll)');
+
+            //设置默认状态
+
+            $selectedLength.text(0);
+            $mi_open.prop('disabled',true);
+            $checkAll.click(function () {
+
+                //全选
+                $items. prop('checked',this.checked);
+                //选中数量
+                var $checkedItems = $items.filter(':checked');
+                $selectedLength.text($checkedItems.length);
+                //按钮状态
+                $mi_open.prop('disabled',!$checkedItems.length);
+            });
+
+            $items.click(function(){
+                //选中数量
+                var $checkedItems = $items.filter(':checked');
+                $selectedLength.text($checkedItems.length);
+                //是否全选
+                $checkAll.prop('checked',$checkedItems.length == $items.length);
+                //按钮状态
+                $mi_open.prop('disabled',!$checkedItems.length);
+
+            });
+
+                //全选
+                /*if(this.checked){
+                    $('table#list td input[type=checkbox]').prop('checked',true);
+                }else{
+                    $('table#list td input[type=checkbox]').prop('checked',false);
+                }*/
+
+
+            $('#my-modal').click(function(){
+                $('#mi-modal').load('create_yun.html',function(){
+                    //$('#myModal').fadeIn(500);
+                    $('#myModal').modal('toggle');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

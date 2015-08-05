@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Full Layout - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="../css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/home.css"/>
+</head>
+<body class="easyui-layout">
+    <div class="header" data-options="region:'north',border:false">
+    <!--头部开始-->
+        <div class="mi_header_left"><img src="../images/header_left.jpg" alt=""/></div>
+        <div class="mi_header_center">
+            <ul>
+                <li><img src="../images/user_orange.png" alt=""/>&nbsp;<span>用户：&nbsp;&nbsp;</span></li>
+                <li>&nbsp;&nbsp;&nbsp;<img src="../images/house.png" alt=""/>&nbsp;<span>首页&nbsp;&nbsp;&nbsp;</span></li>
+                <li>&nbsp;&nbsp;&nbsp;<img src="../images/key.png" alt=""/>&nbsp;<span>修改密码&nbsp;&nbsp;&nbsp;</span></li>
+                <li>&nbsp;&nbsp;&nbsp;<img src="../images/door_out.png" alt=""/>&nbsp;<span>退出&nbsp;&nbsp;&nbsp;</span></li>
+            </ul>
+        </div>
+        <div class="mi_header_right"><img src="../images/header_right.jpg" alt=""/></div>
+    <!--头部结束-->
+    </div>
+
+    <!--左侧导航栏开始-->
+    <div region="west" title="系统导航" split="true"  style="width:200px;padding:4px;">
+        <div class="easyui-accordion" fit="true" >
+
+            <div title="质量管理" >
+                <ul class="easyui-tree wy-nav-tree" >
+                    <li>
+                        <span>供货单位和药品档案</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('quality/vendor/agent/list', '经营企业供货单位')" href="javascript:void(0)">经营企业供货单位</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('quality/vendor/manufacturer/list', '生产企业供货单位')" href="javascript:void(0)">生产企业供货单位</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>质量审核</span>
+                        <ul>
+                            <li>
+                                <span>药品验收审核</span>
+                                <ul>
+                                    <li>
+                                        <a onclick="open1('quality/checkaccept/lock/list', '正在审核')" href="javascript:void(0)">正在审核</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="open1('quality/checkaccept/unlock/list', '审核完成')" href="javascript:void(0)">审核完成</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>陈列检查审核</span>
+                                <ul>
+                                    <li>
+                                        <a onclick="open1('quality/maintain/check/lock/itemlist', '正在审核')" href="javascript:void(0)">正在审核</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="open1('quality/maintain/check/unlock/itemlist', '审核完成')" href="javascript:void(0)">审核完成</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>养护问题药品报告</span>
+                                <ul>
+                                    <li>
+                                        <a onclick="open1('quality/problem/checking/list?type=DrugStorageCheckByMaintain', '正在审核')" href="javascript:void(0)">正在审核</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="open1('quality/problem/finish/list?type=DrugStorageCheckByMaintain', '审核完毕')" href="javascript:void(0)">审核完毕</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>销售问题药品报告</span>
+                                <ul>
+                                    <li>
+                                        <a onclick="open1('quality/problem/checking/list?type=DrugStorageCheckBySale', '正在审核')" href="javascript:void(0)">正在审核</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="open1('quality/problem/finish/list?type=DrugStorageCheckBySale', '审核完毕')" href="javascript:void(0)">审核完毕</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>过期药品报告</span>
+                                <ul>
+                                    <li>
+                                        <a onclick="open1('quality/outofdate/checking/list', '正在审核')" href="javascript:void(0)">正在审核</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="open1('quality/outofdate/finish/list', '审核完毕')" href="javascript:void(0)">审核完毕</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>权限分配</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('sys/user/list', '用户管理')" href="javascript:void(0)">用户管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span >基础数据</span>
+                        <ul>
+                            <li><a onclick="open1('quality/basic/trading_range/list', '药品范围')" href="javascript:void(0)">药品范围</a></li>
+                            <li><a onclick="open1('quality/basic/dosage_form/list', '剂型')" href="javascript:void(0)">剂型</a></li>
+                            <li><a onclick="open1('quality/basic/controlled/list', '专门管制类别')" href="javascript:void(0)">专门管制类别</a></li>
+                            <li><a onclick="open1('quality/basic/resolve_method/list', '审核处理意见')" href="javascript:void(0)">审核处理意见</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div title="采购管理" >
+                <ul class="easyui-tree wy-nav-tree" >
+                    <li>
+                        <span>采购管理</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('purchase/order/list', '药品订单')" href="javascript:void(0)">药品订单</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('purchase/send/list', '采购记录 - 包括作废记录')" href="javascript:void(0)">采购记录</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('purchase/send/list_print', '统计查询 - 不包括作废记录')" href="javascript:void(0)">统计查询</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div title="验收管理" >
+                <ul class="easyui-tree wy-nav-tree" >
+                    <li>
+                        <span>药品验收</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('checkaccept/wait/list', '收货管理')" href="javascript:void(0)">收货管理</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('checkaccept/now/list', '正在验收')" href="javascript:void(0)">正在验收</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('checkaccept/send/list', '验收记录')" href="javascript:void(0)">验收记录</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('checkaccept/send/list_print', '统计查询')" href="javascript:void(0)">统计查询</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div title="养护管理" >
+                <ul class="easyui-tree wy-nav-tree" >
+                    <li>
+                        <span>效期管理</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/outofdate/list', '过期药品')" href="javascript:void(0)">
+
+                                    过期药品
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/outofdate/searchprint/list', '过期记录')" href="javascript:void(0)">
+                                    过期记录
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/tooutofdate/list', '近效期药品')" href="javascript:void(0)">
+
+                                    近效期药品
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>库存记录</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/split/list', '拆零药品')" href="javascript:void(0)">拆零药品</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/common/list', '非拆零药品')" href="javascript:void(0)">非拆零药品</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/zero/list', '零库存药品')" href="javascript:void(0)">零库存药品</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('maintain/drugstorage/searchprint/list', '统计查询')" href="javascript:void(0)">统计查询</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>陈列检查</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('maintain/check/plan/planlist', '陈列检查计划')" href="javascript:void(0)">
+                                    <span style="color:red;">陈列检查计划</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="open1('maintain/check/record/planlist', '陈列检查记录')" href="javascript:void(0)">陈列检查记录</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>问题药品报告</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('maintain/problem/form/check', '提交报告')" href="javascript:void(0)">提交报告</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>药品盘点</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('maintain/error/list', '调整库存数量')" href="javascript:void(0)">调整库存数量</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div title="销售管理" >
+                <ul class="easyui-tree wy-nav-tree" >
+                    <li>
+                        <span>药品销售</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('sale/order/orderform', '开票')" href="javascript:void(0)">开票</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('sale/order/list', '销售清单')" href="javascript:void(0)">销售清单</a>
+                            </li>
+                            <!-- <li>
+                                <a onclick="open1('sale/record/itemlist', '销售记录')" href="javascript:void(0)">销售记录</a>
+                            </li> -->
+                            <li>
+                                <a onclick="open1('sale/record/split/itemlist', '拆零销售记录')" href="javascript:void(0)">拆零销售记录</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('sale/record/common/itemlist', '非拆零销售记录')" href="javascript:void(0)">非拆零销售记录</a>
+                            </li>
+                            <li>
+                                <a onclick="open1('sale/record/itemlist_print', '统计查询')" href="javascript:void(0)">统计查询</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>问题药品报告</span>
+                        <ul>
+                            <li>
+                                <a onclick="open1('sale/problem/form/check', '提交报告')" href="javascript:void(0)">提交报告</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div title="系统管理" >
+                <ul class="easyui-tree wy-nav-tree" >
+                    <li>
+                        <a onclick="open1('sys/user/list', '用户管理')" href="javascript:void(0)">用户管理</a>
+                    </li>
+                    <li>
+                        <a onclick="open1('sys/db/list', '数据备份')" href="javascript:void(0)">数据备份</a>
+                    </li>
+                    <li>
+                        <a onclick="open1('sys/log/operation/list', '系统日志')" href="javascript:void(0)">系统日志</a>
+                    </li>
+                    <li>
+                        <a onclick="open1('sys/settings/list', '系统参数')" href="javascript:void(0)">系统参数</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--左侧导航栏结束-->
+
+    <div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">
+    east region
+    </div>
+    <div data-options="region:'south',border:false" style="height:50px;background:#A9FACD;padding:10px;">
+    south region
+    </div>
+    <div data-options="region:'center',title:'欢迎页面'"></div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.easyui.min.js"></script>
+
+</body>
+</html>
